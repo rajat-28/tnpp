@@ -1,20 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import NavBar from './Components/Navbar';
-import SearchBar from './Components/SearchBar';
-import Index from './pages/Index';
-import Post from './pages/Post';
-import About from './pages/About';
-
+import Todo from './Components/Todo';
+// Import Bootstrap CSS for styling
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div>
-      {/* <Index/> */}
-      {/* <Post/> */}
-      <About/>
+    <div className="App">
+      {/* Main Todo Application */}
+      <Todo />
     </div>
-
   );
 }
 

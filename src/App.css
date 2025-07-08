@@ -339,3 +339,130 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-right: auto;
   width:80px;
 }
+
+/* Custom styles for Todo App */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+  margin: 0;
+}
+
+/* Ensure the app takes full viewport height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Make cards take full width on mobile */
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Adjust button sizes for mobile */
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Make todo text wrap nicely on mobile */
+  .list-group-item {
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Hide badge on very small screens to save space */
+  .d-none.d-sm-inline {
+    display: none !important;
+  }
+}
+
+/* Custom checkbox styling */
+.form-check-input:checked {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Smooth transitions for better UX */
+.list-group-item {
+  transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Custom card styling */
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* Button hover effects */
+.btn {
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Input focus styling */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Loading animation for smooth interactions */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Custom scrollbar for todo list */
+.list-group {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Webkit scrollbar styling */
+.list-group::-webkit-scrollbar {
+  width: 6px;
+}
+
+.list-group::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.list-group::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.list-group::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
